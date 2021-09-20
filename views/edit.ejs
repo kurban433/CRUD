@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="show">All Customer</a> -->
+    <div class="container" style="text-align: center;">
+        <form method="POST" action="/update/<%=user._id %>">
+            <div class="from-group">
+                <label for=""><b>User Name</b></label>
+                <input type="text" name="name" class="form-control" value="<%=user.name%>">
+            </div>
+            <div class="from-group">
+                <label for=""><b>Email</b></label>
+                <input type="text" name="email" class="form-control" value="<%=user.email %>">>
+            </div>
+            <div class="from-group">
+                <label for=""><b>Password</b></label>
+                <input type="password" name="password" class="form-control" value="<%=user.password %>">>
+            </div>
+            <input type="submit" name="Update" value="Update" class="btn btn-primary">
+        </form>
+    </div>
+</body>
+</html>
